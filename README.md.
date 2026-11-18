@@ -1,0 +1,40 @@
+# Meu Controle Financeiro
+
+## Objetivo
+O Meu Controle Financeiro é uma aplicação desktop desenvolvida em Java para auxiliar no controle de receitas e despesas pessoais, permitindo acompanhar o saldo financeiro.
+
+## Funcionalidades
+- Adicionar receitas e despesas.
+- Listar os lançamentos cadastrados.
+- Editar lançamentos existentes.
+- Excluir lançamentos com confirmação.
+- Calcular e atualizar o saldo automaticamente.
+- Validar os dados informados pelo usuário.
+- Exibir mensagens de alerta para entradas inválidas.
+
+## Tecnologias utilizadas
+- Java
+- Java Swing para a interface gráfica.
+- Programação Orientada a Objetos (POO).
+- Coleções Java (`ArrayList` e `List`).
+
+## Conceitos de POO aplicados
+- **Encapsulamento:** atributos privados e métodos de acesso.
+- **Herança:** as classes `Receita` e `Despesa` herdam da classe `Lancamento`.
+- **Polimorfismo:** cada tipo de lançamento calcula seu impacto no saldo.
+- **Abstração:** utilização da classe abstrata `Lancamento` e da interface `OperacaoFinanceira`.
+
+## Como executar
+1. Instale o Java JDK e o Apache NetBeans.
+2. Baixe ou clone este repositório.
+3. Abra o projeto no Apache NetBeans.
+4. Execute a classe `ControleFinanceiro.java`.
+
+## Armazenamento dos dados
+Os lançamentos são armazenados em memória durante a execução do programa. Os dados não são mantidos após o encerramento da aplicação.
+
+## Autora
+Mariana
+
+## Projeto
+[Meu Controle Financeiro no GitHub](https://github.com/marimodesto/meu-controle-financeiro)
