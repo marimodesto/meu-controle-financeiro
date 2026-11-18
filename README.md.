@@ -1,50 +1,65 @@
 # Meu Controle Financeiro
 
-## Objetivo
+## Sobre o projeto
 
-O Meu Controle Financeiro é uma aplicação desktop desenvolvida em Java para auxiliar no controle de receitas e despesas pessoais, permitindo acompanhar o saldo financeiro.
+O **Meu Controle Financeiro** é uma aplicação desktop desenvolvida em Java com interface gráfica, criada para auxiliar no controle de receitas e despesas de forma simples e organizada.
+
+O projeto foi desenvolvido como trabalho final da disciplina de Programação I, com o objetivo de aplicar os conceitos de Programação Orientada a Objetos (POO).
 
 ## Funcionalidades
 
-- Adicionar receitas e despesas.
-- Listar os lançamentos cadastrados.
+- Cadastrar receitas e despesas.
+- Listar os lançamentos financeiros.
 - Editar lançamentos existentes.
-- Excluir lançamentos com confirmação.
-- Calcular e atualizar o saldo automaticamente.
+- Excluir lançamentos.
+- Calcular e exibir o saldo atual.
 - Validar os dados informados pelo usuário.
-- Exibir mensagens de alerta para entradas inválidas.
+- Exibir mensagens de erro quando os dados são inválidos.
 
 ## Tecnologias utilizadas
 
 - Java
-- Java Swing para a interface gráfica.
-- Programação Orientada a Objetos (POO).
-- Coleções Java (`ArrayList` e `List`).
+- Java Swing para a interface gráfica
+- NetBeans IDE
+- `ArrayList` e `List` para armazenar os lançamentos em memória.
 
-## Conceitos de POO aplicados
+## Conceitos de Programação Orientada a Objetos
 
-- **Encapsulamento:** atributos privados e métodos de acesso.
+O projeto utiliza os seguintes conceitos:
+
+- **Encapsulamento:** atributos privados e métodos getters e setters.
 - **Herança:** as classes `Receita` e `Despesa` herdam da classe `Lancamento`.
-- **Polimorfismo:** cada tipo de lançamento calcula seu impacto no saldo.
-- **Abstração:** utilização da classe abstrata `Lancamento` e da interface `OperacaoFinanceira`.
+- **Polimorfismo:** receitas e despesas implementam comportamentos diferentes para calcular seu impacto no saldo.
+- **Abstração:** a classe abstrata `Lancamento` define características comuns aos lançamentos.
+- **Interface:** a interface `OperacaoFinanceira` define o método para calcular o impacto financeiro.
+- **Coleções:** utilização de listas para armazenar os lançamentos.
 
-## Como executar
+## Classes do projeto
 
-1. Instale o Java JDK e o Apache NetBeans.
-2. Baixe o código-fonte deste repositório pelo botão **Code → Download ZIP**.
-3. Extraia os arquivos do ZIP.
-4. No Apache NetBeans, crie um projeto Java com o pacote `meucontrolefinanceiro`.
-5. Adicione ao pacote os sete arquivos `.java` disponíveis na pasta `src/meucontrolefinanceiro`.
-6. Execute a classe `ControleFinanceiro.java`.
+- `ControleFinanceiro.java`: classe principal responsável por iniciar a aplicação.
+- `TelaPrincipal.java`: interface gráfica e interação com o usuário.
+- `Lancamento.java`: classe abstrata que representa um lançamento financeiro.
+- `Receita.java`: representa uma receita.
+- `Despesa.java`: representa uma despesa.
+- `OperacaoFinanceira.java`: interface que define a operação de cálculo financeiro.
+- `ControleLancamentos.java`: gerencia os lançamentos e calcula o saldo.
+
+## Como executar o projeto
+
+1. Instale o JDK e o NetBeans IDE.
+2. Acesse o repositório no GitHub: https://github.com/marimodesto/meu-controle-financeiro
+3. Clique em **Code** e depois em **Download ZIP**.
+4. Extraia os arquivos baixados.
+5. Abra o NetBeans e crie um projeto Java com o pacote `meucontrolefinanceiro`.
+6. Adicione ao projeto os arquivos `.java` disponíveis na pasta `src/meucontrolefinanceiro`.
+7. Execute o arquivo `ControleFinanceiro.java`.
 
 ## Armazenamento dos dados
 
-Os lançamentos são armazenados em memória durante a execução do programa. Os dados não são mantidos após o encerramento da aplicação.
+Os lançamentos são armazenados temporariamente em memória. Portanto, os dados cadastrados são perdidos quando a aplicação é encerrada.
 
 ## Autora
 
 Mariana
 
-## Projeto
-
-[Meu Controle Financeiro no GitHub](https://github.com/marimodesto/meu-controle-financeiro)
+Desenvolvido como projeto acadêmico para a disciplina de Programação I.
